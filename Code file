@@ -1,0 +1,17 @@
+# import modules
+
+import date
+import time
+
+#Ask user for input: Alarm time. Request on new line each time.
+alarm_time = input("Enter the time of alarm to be set (Hr:Min): \n")
+# To keep checking time, create a loop.
+while True:
+    # Set variable to and for current time.
+    current_time = time.strftime("Hr:Min")
+    print("Current time is: " + current_time)
+    # Compare current time to alarm time. Codition for alarm to go off.
+    if current_time == alarm_time:
+        print(" Wake Up!")
+        break
+
